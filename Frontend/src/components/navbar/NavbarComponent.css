@@ -1,0 +1,286 @@
+.logo {
+    height: 75px;
+    width: 75px;
+    margin-left: 24px;
+    filter: drop-shadow(0 2px 8px rgba(25, 118, 210, 0.10));
+    transition: filter 0.2s, transform 0.2s;
+}
+.logo:hover {
+    filter: drop-shadow(0 6px 24px rgba(25, 118, 210, 0.18));
+    transform: scale(1.05);
+}
+
+.cartLink {
+    position: relative;
+    margin-left: auto;
+}
+
+.logo-cart {
+    height: 38px;
+    fill: #1976d2;
+    transform: scaleX(-1);
+    z-index: 0;
+    transition: fill 0.2s;
+}
+
+.number-cart-div {
+    position: absolute;
+    top: -14px;
+    left: -12px;
+    width: 28px;
+    height: 28px;
+    background: linear-gradient(90deg, #1976d2 0%, #42a5f5 100%);
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    line-height: 24px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.10);
+}
+
+.number-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.registrationLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff !important;
+    font-weight: 600;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 18px;
+    background: linear-gradient(90deg, #1976d2 0%, #42a5f5 100%);
+    box-shadow: 0 2px 12px rgba(25, 118, 210, 0.12);
+    transition: background 0.3s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.registrationLink:hover {
+    color: #fff !important;
+    background: linear-gradient(90deg, #42a5f5 0%, #1976d2 100%);
+    box-shadow: 0 4px 24px rgba(25, 118, 210, 0.18);
+    transform: scale(1.04);
+}
+.icon-registration-nav {
+    font-size: 20px;
+    fill: #fff !important;
+    margin-right: 8px;
+    transition: fill 0.2s;
+}
+
+.myProfileLink {
+    text-decoration: none;
+    color: #1976d2;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+.myProfileLink:hover {
+    color: #1565c0 !important;
+}
+
+.header {
+    background: linear-gradient(90deg, #1976d2 0%, #42a5f5 100%);
+    color: #fff;
+    height: 100px;
+    display: flex;
+    padding: 10px 4%;
+    z-index: 10;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 20px rgba(25, 118, 210, 0.10);
+    align-items: center;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    animation: fadeInNavbar 1.2s cubic-bezier(0.4,0,0.2,1);
+}
+@keyframes fadeInNavbar {
+    from { opacity: 0; transform: translateY(-40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+a {
+    font-size: 18px !important;
+    color: #e3f0ff !important;
+    text-shadow: 0 1px 8px rgba(25, 118, 210, 0.18);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover {
+    color: #42a5f5 !important;
+    text-shadow: 0 2px 12px rgba(25, 118, 210, 0.25);
+}
+
+.navLink {
+    color: #fff !important;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    height: 100%;
+    cursor: pointer;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.navLinkMenu {
+    font-size: 20px;
+    font-weight: 600 !important;
+    letter-spacing: 2px;
+    color: #fff !important;
+    text-shadow: 0 1px 8px rgba(25, 118, 210, 0.18);
+    margin-left: 24px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.navMenu {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    margin-left: 30px;
+    margin-right: auto;
+    justify-content: center;
+    gap: 30px;
+}
+
+.myProfileLink:hover, .navLink:hover, .navLinkMenu:hover {
+    color: #e3f0ff !important;
+}
+
+.navBtn {
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+    margin-left: 28px;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.btn-login-logout {
+    border-radius: 12px;
+    padding: 12px 20px !important;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    background: linear-gradient(90deg, #1976d2 0%, #42a5f5 100%);
+    font-size: 18px !important;
+    font-weight: 600;
+    letter-spacing: 1px !important;
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+}
+.btn-login-logout:hover {
+    color: #fff;
+    background: linear-gradient(90deg, #1565c0 0%, #1976d2 100%);
+    transform: scale(1.04);
+    box-shadow: 0 4px 16px rgba(25, 118, 210, 0.18);
+}
+
+.icon-log {
+    fill: #fff !important;
+    font-size: 20px;
+    margin-right: 8px;
+    transition: fill 0.2s;
+}
+
+.x-icon, .bars-icon {
+    display: none;
+}
+
+.nav-links-buttons-container {
+    display: flex;
+}
+
+@media(max-width: 1300px) {
+    .navMenu {
+        gap: 18px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .x-icon, .bars-icon {
+        display: block;
+        height: 36px;
+        fill: #1976d2;
+    }
+    .nav-links-buttons-container {
+        position: fixed;
+        background: #f7fbff;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -280px;
+        z-index: 50;
+        transition: 1s;
+        text-align: center;
+        display: block;
+        box-shadow: 0 2px 8px rgba(25, 118, 210, 0.10);
+    }
+    .navLink {
+        justify-content: center;
+        margin: 20px 0;
+    }
+    .navMenu {
+        display: block;
+        margin: 0;
+    }
+    .navBtn {
+        display: block;
+        margin: 0;
+    }
+    .btn-login-logout {
+        width: 70%;
+        display: block;
+        margin: auto;
+        font-size: 14px !important;
+        margin-top: 12px;
+    }
+    .registrationLink {
+        width: 70%;
+        margin: auto;
+        font-size: 14px !important;
+    }
+    .myProfileLink {
+        margin: 20px 0;
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+    .x-icon {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    .bars-icon {
+        margin-right: 6px;
+        margin-left: 26px;
+    }
+    .logo {
+        margin-left: 6px;
+    }
+    .navLinkMenu {
+        font-size: 18px;
+    }
+}
+
+
+  
+
+
+
+

@@ -1,0 +1,92 @@
+.mealPic {
+    height: 110px;
+    width: 90%;
+    object-fit: cover;
+    border: 2px #1976d2 solid;
+    border-radius: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+    box-shadow: 0 2px 12px rgba(25, 118, 210, 0.10);
+    transition: box-shadow 0.3s, transform 0.2s;
+}
+.mealPic:hover {
+    box-shadow: 0 6px 24px rgba(25, 118, 210, 0.18);
+    transform: scale(1.03);
+}
+
+.theadth {
+    text-align: center;
+    font-size: larger;
+    color: #1976d2;
+    letter-spacing: 1px;
+}
+
+.td-content-img {
+    display: flex;
+    justify-content: center;
+}
+
+.td-content {
+    align-items: center;
+    font-size: larger;
+    white-space: wrap !important;
+    color: #1a237e;
+}
+
+.tableElement {
+    margin-top: 20px;
+    background-color: #f7fbff;
+    border-radius: 30px !important;
+    border-collapse: separate !important;
+    box-shadow: 0 0 24px 0 rgba(25, 118, 210, 0.10);
+    animation: fadeInCard 1s cubic-bezier(0.4,0,0.2,1);
+}
+
+@keyframes fadeInCard {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+    
+       
+    
+.btn-blue {
+    background: linear-gradient(90deg, #1976d2 0%, #42a5f5 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.10);
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+.btn-blue:hover, .btn-blue:focus {
+    background: linear-gradient(90deg, #1565c0 0%, #1976d2 100%);
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 4px 16px rgba(25, 118, 210, 0.18);
+}
+
+.btn-outline-blue {
+    background: #fff;
+    color: #1976d2;
+    border: 2px solid #1976d2;
+    border-radius: 8px;
+    padding: 8px 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+    transition: background 0.3s, color 0.2s, border 0.2s, transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+.btn-outline-blue:hover, .btn-outline-blue:focus {
+    background: #1976d2;
+    color: #fff;
+    border: 2px solid #1565c0;
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 4px 16px rgba(25, 118, 210, 0.18);
+}
+    
+       
+    

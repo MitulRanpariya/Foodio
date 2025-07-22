@@ -1,0 +1,119 @@
+#loginContainerId {
+    background: #f7fbff;
+    width: 400px;
+    padding: 30px;
+    border-radius: 30px;
+    border: 2px solid #1976d2;
+    box-shadow: 0 0 24px 0 rgba(25, 118, 210, 0.10);
+    animation: fadeInLogin 1.1s cubic-bezier(0.4,0,0.2,1);
+    transition: box-shadow 0.3s, border 0.3s;
+}
+
+@keyframes fadeInLogin {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.login-main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #e3f0ff 0%, #f7fbff 100%);
+}
+
+.login-container {
+    width: 400px !important;
+}
+
+.swal2-styled.swal2-confirm {
+    background: linear-gradient(90deg, #1976d2 0%, #42a5f5 100%) !important;
+    color: #fff !important;
+}
+
+.card-body.login {
+    padding-bottom: 0;
+}
+
+.login-submit-btn {
+    font-size: 18px;
+    padding: 10px 32px;
+    border-radius: 24px;
+    background: linear-gradient(90deg, #1976d2 0%, #42a5f5 100%);
+    border: none;
+    color: #fff;
+    margin: 24px auto 16px auto;
+    display: flex;
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.10);
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+.login-submit-btn:hover {
+    background: linear-gradient(90deg, #1565c0 0%, #1976d2 100%);
+    transform: scale(1.04);
+    box-shadow: 0 4px 16px rgba(25, 118, 210, 0.18);
+}
+
+.registration-div {
+    display: flex;
+    justify-content: center;
+}
+
+.registration-link {
+    font-size: 16px !important;
+    color: #1976d2;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.registration-link:hover {
+    color: #1565c0;
+}
+
+.login-input {
+    border-radius: 10px !important;
+    box-shadow: 0 0 3px 0px rgba(25, 118, 210, 0.10);
+    border: 1.5px solid #1976d2;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+.login-input:focus {
+    border: 1.5px solid #1565c0;
+    box-shadow: 0 0 8px 0px rgba(25, 118, 210, 0.18);
+}
+
+.title-login {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    align-items: center;
+    color: #1976d2;
+    margin-bottom: 12px;
+    animation: fadeInLogin 1.2s cubic-bezier(0.4,0,0.2,1);
+}
+
+.icon-log-login {
+    font-size: 30px;
+    margin-right: 10px;
+    fill: #1976d2;
+    transition: fill 0.2s;
+}
+
+@media(max-width: 800px) {
+    #loginContainerId {
+        width: 80%;
+    }
+    .registration-div {
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+    .registration-label {
+        width: fit-content;
+    }
+    .registration-link {
+        font-size: 12px !important;
+        letter-spacing: 0;
+    }
+}

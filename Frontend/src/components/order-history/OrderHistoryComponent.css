@@ -1,0 +1,43 @@
+.theadth {
+    text-align: center;
+    font-size: larger;
+    color: #1976d2;
+    letter-spacing: 1px;
+}
+
+.td-content {
+    align-items: center;
+    font-size: larger;
+    color: #1a237e;
+}
+
+.tableElement {
+    margin-top: 20px;
+    background-color: #f7fbff;
+    border-radius: 30px !important;
+    border-collapse: separate !important;
+    box-shadow: 0 0 24px 0 rgba(25, 118, 210, 0.10);
+    animation: fadeInOrderCard 1s cubic-bezier(0.4,0,0.2,1);
+}
+
+@keyframes fadeInOrderCard {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.title-order-history {
+    padding: 20px 30px;
+    background: linear-gradient(90deg, #1976d2 0%, #42a5f5 100%);
+    width: 400px;
+    margin: auto;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 0 24px 0 rgba(25, 118, 210, 0.10);
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    animation: fadeInOrderCard 1.2s cubic-bezier(0.4,0,0.2,1);
+}

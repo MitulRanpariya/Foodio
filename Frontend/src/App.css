@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500&display=swap');
+
+* {
+  font-family: 'Sora', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #e3f0ff 0%, #f7fbff 100%);
+  min-height: 100vh;
+  overflow: hidden;
+  color: #1a237e;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: #1976d2;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 -2px 8px rgba(25, 118, 210, 0.1);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  z-index: 100;
+  animation: slideUpFooter 1s ease;
+}
+
+@keyframes slideUpFooter {
+  from { transform: translateY(100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.header {
+  color: white;
+  background: linear-gradient(90deg, #1976d2 0%, #42a5f5 100%);
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+  padding: 20px 0;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  animation: fadeInHeader 1.2s cubic-bezier(0.4,0,0.2,1);
+}
+
+@keyframes fadeInHeader {
+  from { opacity: 0; transform: translateY(-40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.container-add-employee {
+  margin-bottom: 50px;
+}
+
+.router-view {
+  overflow-y: auto;
+  height: calc(100vh - 100px - 40px);
+  overflow-x: hidden;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  position: relative;
+  z-index: 1;
+  animation: fadeInMain 1.2s cubic-bezier(0.4,0,0.2,1);
+}
+
+@keyframes fadeInMain {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.router-view::before {
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: calc(100vh - 100px - 40px);
+  background: linear-gradient(-45deg, #1976d2, #42a5f5, #e3f0ff, #f7fbff);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  opacity: 0.18;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+a {
+  letter-spacing: 1px;
+  color: #1976d2;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #0d47a1;
+  text-decoration: underline;
+}
+
+button {
+  font-weight: 500 !important;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #1976d2 0%, #42a5f5 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+button:hover, button:focus {
+  background: linear-gradient(90deg, #1565c0 0%, #1976d2 100%);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 16px rgba(25, 118, 210, 0.18);
+}
+
+.swal2-confirm.swal2-styled.swal2-default-outline {
+  background-color: #1976d2 !important;
+}
+
+.swal2-title {
+  font-weight: 500 !important;
+}
+
+/* GLOBAL TABLE CURVED STYLE - ENFORCED */
+table, .table, .tableElement, .nesto, table[class], table[class^="table"], table[class*="table"] {
+  border-radius: 30px !important;
+  overflow: hidden !important;
+  border-collapse: separate !important;
+}
+table th, table td, .table th, .table td, .tableElement th, .tableElement td, .nesto th, .nesto td {
+  border-radius: 0 !important;
+}
+/********** SCROLL BAR START ************/
+::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+  background: #e3f0ff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1976d2;
+  border-radius: 6px;
+  box-shadow: 0px 1px 2px rgba(25, 118, 210, 0.15);
+}
+
+::-webkit-scrollbar-corner {
+  background: #f7fbff;
+}
+/********** SCROLL BAR END ************/
